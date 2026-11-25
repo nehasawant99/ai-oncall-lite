@@ -13,3 +13,8 @@ Lightweight Python (`FastAPI` + `SQLite`) incident triage service that ingests e
 * **Avg Triage Latency:** < 1 ms (sub-millisecond local rule triage)
 * **Safe Auto-Fixes:** 6/10 (`verified_safe_fix`)
 * **Human Escalations:** 4/10 (`needs_human_approval`)
+
+
+##  AI On-Call Engineer Lite Dashboard:
+
+<img width="1469" height="857" alt="image" src="https://github.com/user-attachments/assets/0abdd496-a701-4362-8c78-bf3af8b4e2e0" />
