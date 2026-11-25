@@ -6,6 +6,11 @@ Lightweight Python (`FastAPI` + `SQLite`) incident triage service that ingests e
 * **Problem (Track B3 — The AI on-call engineer):** Diagnosing service failures from raw logs takes manual effort, while unguarded automated fixes can cause outages or unintended changes.
 * **Solution:** An incident triage API and Bootstrap 5 dashboard that parses log windows, classifies root causes and fixes (`verified_safe_fix` vs. `needs_human_approval`), supports optional Gemini API triage with deterministic rule-based fallback, tracks resolution states in SQLite, and exposes summary metrics (`/summary`).
 
+##  AI On-Call Engineer Lite Dashboard:
+
+<img width="1469" height="780" alt="image" src="https://github.com/user-attachments/assets/93aca941-105a-49dd-8135-0a8748733fb6" />
+
+
 ## Project Structure
 ```text
 ai-oncall-lite/
@@ -16,15 +21,4 @@ ai-oncall-lite/
 ├── .gitignore           # Ignores .venv/, incidents.db, and cache files
 └── README.md            # Project documentation
 
-## Run Locally
-```text
-Bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install fastapi uvicorn httpx
-uvicorn app:app --reload
 
-
-##  AI On-Call Engineer Lite Dashboard:
-
-<img width="1469" height="857" alt="image" src="https://github.com/user-attachments/assets/0abdd496-a701-4362-8c78-bf3af8b4e2e0" />
